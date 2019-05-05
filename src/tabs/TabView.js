@@ -23,9 +23,22 @@ export default class TabView extends React.Component {
 
   render() {
     const { value } = this.state;
+    const width = window.innerWidth;
+    // const height = window.innerHeight;
 
     return (
-      <div className="col" id="ContentPaper" style={{opacity: 0.85, zIndex: 10, background: 'white', width: '50%', height: '60%', borderRadius: '15px'}}>
+      <div
+        className="col"
+        id="ContentPaper"
+        style={{
+          opacity: 0.85,
+          zIndex: 10,
+          background: 'white',
+          width: width <= 500 ? '90%' : '50%',
+          height: width <= 500 ? '75%' : '60%',
+          borderRadius: '15px'
+        }}
+      >
         <Tabs
           className="hide-scroll-bar"
           value={this.state.value}

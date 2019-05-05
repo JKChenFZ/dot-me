@@ -45,8 +45,11 @@ html, body {
   background: white;
   position: absolute;
   transform-origin:100% 0;
+  -webkit-transform-origin:100% 0;
   animation:star-ani 6.7s infinite ease-out;
   animation-direction: normal;
+  -webkit-animation:star-ani 6.7s infinite ease-out;
+  -webkit-animation-direction: normal;
 }
 .star-slow:after {
   content: '';
@@ -58,8 +61,12 @@ html, body {
   border-color: transparent transparent transparent #FFF;
   transform: rotate(-45deg) translate3d(1px, -1px, 0);
   transform-origin: 0% 100%;
+  -webkit-transform: rotate(-45deg) translate3d(1px, -1px, 0);
+  -webkit-transform-origin: 0% 100%;
   animation: shooting-ani 6.7s infinite ease-out;
   animation-direction: normal;
+  -webkit-animation: shooting-ani 6.7s infinite ease-out;
+  -webkit-animation-direction: normal;
 }
 
 .star-fast {
@@ -70,8 +77,11 @@ html, body {
   background: white;
   position: absolute;;
   transform-origin:100% 0;
+  -webkit-transform-origin:100% 0;
   animation:star-ani 4.4s infinite ease-out;
   animation-direction: normal;
+  -webkit-animation:star-ani 4.4s infinite ease-out;
+  -webkit-animation-direction: normal;
 }
 .star-fast:after {
   content: '';
@@ -83,8 +93,12 @@ html, body {
   border-color: transparent transparent transparent #FFF;
   transform: rotate(-45deg) translate3d(1px, -1px, 0);
   transform-origin: 0% 100%;
+  -webkit-transform: rotate(-45deg) translate3d(1px, -1px, 0);
+  -webkit-transform-origin: 0% 100%;
   animation: shooting-ani 4.4s infinite ease-out;
   animation-direction: normal;
+  -webkit-animation: shooting-ani 4.4s infinite ease-out;
+  -webkit-animation-direction: normal;
 }
 
 .pink {
@@ -92,10 +106,12 @@ html, body {
   left: 500px;
   background:#ff5a99;
   animation-delay: 0.1s;
+  -webkit-animation-delay: 0.1s;
 }
 .pink:after {
   border-color:transparent transparent transparent #ff5a99 ;
   animation-delay: 0.1s;
+  -webkit-animation-delay: 0.1s;
 }
 
 .blue {
@@ -103,10 +119,12 @@ html, body {
   left:450px;
   background:#4dabff ;
   animation-delay: 0s;
+  -webkit-animation-delay: 0s;
 }
 .blue:after {
   border-color: transparent transparent transparent #4dabff;
   animation-delay: 0s;
+  -webkit-animation-delay: 0s;
 }
 
 .yellow {
@@ -114,10 +132,12 @@ html, body {
   left: 600px;
   background:#ffcd5c;
   animation-delay: 0.1s;
+  -webkit-animation-delay: 0s;
 }
 .yellow:after {
   border-color:transparent transparent transparent #ffcd5c;
   animation-delay: 0.1s;
+  -webkit-animation-delay: 0s;
 }
 
 .orange {
@@ -125,10 +145,12 @@ html, body {
   left: 600px;
   background:#c0731b;
   animation-delay: .05s;
+  -webkit-animation-delay: .05s;
 }
 .orange:after {
   border-color:transparent transparent transparent #c0731b;
   animation-delay: .05s;
+  -webkit-animation-delay: .05s;
 }
 
 .black {
@@ -136,10 +158,12 @@ html, body {
   left: 600px;
   background:#000000;
   animation-delay: 0.01s;
+  -webkit-animation-delay: 0.01s;
 }
 .black:after {
   border-color:transparent transparent transparent #000000;
   animation-delay: 0.01s;
+  -webkit-animation-delay: 0.01s;
 }
 
 .green {
@@ -147,10 +171,23 @@ html, body {
   left: 600px;
   background:#2d966e;
   animation-delay: 0.005s;
+  -webkit-animation-delay: 0.005s;
 }
 .green:after {
   border-color:transparent transparent transparent #2d966e;
   animation-delay: 0.005s;
+  -webkit-animation-delay: 0.005s;
+}
+
+@-webkit-keyframes shooting-ani {
+  0% {
+  }
+  50% {
+    -webkit-animation:scale(1) rotate(-40deg) translate(0px, 0px);
+  }
+  100% {
+    -webkit-transform:scale(0.5) rotate(-40deg) translate(0px, -1px);
+  }
 }
 
 @keyframes shooting-ani {
@@ -162,6 +199,21 @@ html, body {
   }
   100% {
     transform:scale(0.5) rotate(-40deg) translate(0px, -1px);
+  }
+}
+
+@-webkit-keyframes star-ani {
+  0% {
+    -webkit-opacity:0;
+    -webkit-transform:scale(0) rotate(0) translate3d(0, 0, 0);
+  }
+  50% {
+    -webkit-opacity:1;
+    -webkit-transform:scale(1) rotate(0) translate3d(-200px, 200px, 0);
+  }
+  100% {
+    -webkit-opacity:0;
+    -webkit-transform:scale(1) rotate(0) translate3d(-300px, 300px, 0);
   }
 }
 
