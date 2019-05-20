@@ -9,7 +9,7 @@ export default class MeTab extends React.Component {
   render() {
     return (
       <div className="col panel-layout">
-        <div className="row" style={{marginTop: '5%', justifyContent: 'center'}}>
+        <div className="row" style={{marginTop: '3%', justifyContent: 'center'}}>
           <Avatar style={{width: '180px', height: '180px'}} alt="KC" src={Me}/>
         </div>
         <div
@@ -17,7 +17,7 @@ export default class MeTab extends React.Component {
           style={{
             marginLeft: '15%',
             marginRight: '15%',
-            marginTop: '5%',
+            marginTop: '3%',
             justifyContent: 'center',
             height: '30%',
             overflow: 'auto',
@@ -25,7 +25,7 @@ export default class MeTab extends React.Component {
         >
           <Typing>
             <Typography variant="h5">
-              Hi, my name is Kun <span role="img" aria-label="sheep">👋</span> <br/>
+              Hi, my name is Jason <span role="img" aria-label="sheep">👋</span> <br/>
               <Typing.Delay ms={2000} />
               I major in CS at Georgia Institute of Technology.
             </Typography>

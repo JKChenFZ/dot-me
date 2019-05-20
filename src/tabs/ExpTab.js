@@ -22,7 +22,7 @@ export default class ExpTab extends React.Component {
                   <Typography component="span" color="textPrimary">
                     Jan 2017 - Present
                   </Typography>
-                  {"Research Assisstant (Habanero Group)"}
+                  {"Research Assistant (Habanero Group)"}
                 </React.Fragment>
               }
             />
