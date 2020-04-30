@@ -1,7 +1,7 @@
 import React from 'react';
 import Avatar from '@material-ui/core/Avatar';
 import Typography from '@material-ui/core/Typography';
-import Me from './me.jpeg';
+import Me from '../images/me.jpeg';
 import Typing from 'react-typing-animation';
 
 
@@ -19,15 +19,17 @@ export default class MeTab extends React.Component {
             marginRight: '15%',
             marginTop: '3%',
             justifyContent: 'center',
-            height: '30%',
+            height: '50%',
             overflow: 'auto',
           }}
         >
           <Typing>
             <Typography variant="h5">
               Hi, my name is Jason <span role="img" aria-label="sheep">👋</span> <br/>
-              <Typing.Delay ms={2000} />
-              I major in CS at Georgia Institute of Technology.
+              <Typing.Delay ms={1500} />
+              I study CS at Georgia Institute of Technology. <br/>
+              <Typing.Delay ms={1000} />
+              Mostly a Backend Engineer. Open to opportunities 💼
             </Typography>
           </Typing>
         </div>

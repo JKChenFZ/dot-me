@@ -8,17 +8,14 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 export default class SkillTab extends React.Component {
   static languages = [
+    'C/C++',
     'Python',
     'JavaScript',
-    'Java',
-    'HTML/CSS',
-    'C',
-    'C++'
   ]
 
   static frontend = [
+    'HTML/CSS',
     'React',
-    'AngularJS',
     'MobX',
     'Redux',
   ]
@@ -30,18 +27,20 @@ export default class SkillTab extends React.Component {
     'Flask',
     'Django',
     'AWS EC2',
+    'LLVM',
   ]
 
   static database = [
     'MongoDB',
     'Postgres',
-    'MySQL',
-    'Redshift',
+    'Hadoop',
     'DynamoDB',
+    'Cassandra',
   ]
 
   static analytics = [
     'Jupyter Notebook',
+    'Apache Spark',
     'Scikit-Learn',
     'Pandas',
   ]

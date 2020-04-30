@@ -6,6 +6,12 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 
+import FB from '../images/FB.png';
+import GS from '../images/GS.png';
+import GT from '../images/GT.png';
+import INS from '../images/INS.png';
+import THD from '../images/THD.png';
+
 export default class ExpTab extends React.Component {
   render() {
     return (
@@ -13,7 +19,7 @@ export default class ExpTab extends React.Component {
         <List disablePadding={true} style={{marginLeft: '3%', marginTop: '2%'}}>
           <ListItem alignItems="flex-start">
             <ListItemAvatar>
-              <Avatar style={{width: 50, height: 50, borderRadius: '0px'}} alt="GT" src="https://media.licdn.com/dms/image/C560BAQGX16jcTrVxLg/company-logo_200_200/0?e=2159024400&v=beta&t=1Ho_4vw-6gjCOA002UcjoKSZb_JXuUrHVOU2B2XCA44" />
+              <Avatar style={{width: 50, height: 50, borderRadius: '0px'}} alt="GT" src={GT} />
             </ListItemAvatar>
             <ListItemText
               primary="Georgia Institute of Technology"
@@ -29,7 +35,7 @@ export default class ExpTab extends React.Component {
           </ListItem>
           <ListItem alignItems="flex-start">
             <ListItemAvatar>
-              <Avatar style={{width: 50, height: 50, borderRadius: '0px'}} alt="INSTAGRAM" src="https://media.licdn.com/dms/image/C510BAQEBW-TswoZ0CA/company-logo_100_100/0?e=1565222400&v=beta&t=7cve7TZcC4YKLu-JBQIAhiJSOWcCRajLbhd2EMUQBLM" />
+              <Avatar style={{width: 50, height: 50, borderRadius: '0px'}} alt="INSTAGRAM" src={INS} />
             </ListItemAvatar>
             <ListItemText
               primary="Instagram"
@@ -45,7 +51,7 @@ export default class ExpTab extends React.Component {
           </ListItem>
           <ListItem alignItems="flex-start">
             <ListItemAvatar>
-              <Avatar style={{width: 50, height: 50, borderRadius: '0px'}} alt="FACEBOOK" src="https://media.licdn.com/dms/image/C560BAQGzrfvmsDzXeA/company-logo_200_200/0?e=2159024400&v=beta&t=VEfHmdft5MWMxyL5Er2FQCCs_t1WGUMsxkm1kJvsXmg" />
+              <Avatar style={{width: 50, height: 50, borderRadius: '0px'}} alt="FACEBOOK" src={FB} />
             </ListItemAvatar>
             <ListItemText
               primary="Facebook"
@@ -61,7 +67,7 @@ export default class ExpTab extends React.Component {
           </ListItem>
           <ListItem alignItems="flex-start">
             <ListItemAvatar>
-              <Avatar style={{width: 50, height: 50, borderRadius: '0px'}} alt="Godman" src="https://media.licdn.com/dms/image/C4D0BAQE0nZ2BzWyZuw/company-logo_200_200/0?e=2159024400&v=beta&t=YwByMGWHiaXWcNRxn193HWu6v1HnZ-wj4eq6DCVSgDM" />
+              <Avatar style={{width: 50, height: 50, borderRadius: '0px'}} alt="Godman" src={GS} />
             </ListItemAvatar>
             <ListItemText
               primary="Goldman Sachs"
@@ -77,7 +83,7 @@ export default class ExpTab extends React.Component {
           </ListItem>
           <ListItem alignItems="flex-start">
             <ListItemAvatar>
-              <Avatar style={{width: 50, height: 50, borderRadius: '0px'}} alt="Godman" src="https://media.licdn.com/dms/image/C4E0BAQGq7NLeMEjFsg/company-logo_200_200/0?e=2159024400&v=beta&t=3pn0rrwV_eNLe8qJBR468HypXastdBfcAWcnNr19ySg" />
+              <Avatar style={{width: 50, height: 50, borderRadius: '0px'}} alt="Godman" src={THD} />
             </ListItemAvatar>
             <ListItemText
               primary="The Home Depot"

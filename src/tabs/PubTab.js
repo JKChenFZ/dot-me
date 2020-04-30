@@ -8,6 +8,8 @@ import ListItemText from '@material-ui/core/ListItemText';
 import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 import ListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction';
 
+import sc18 from '../images/sc18.png';
+
 export default class PubTab extends React.Component {
   render() {
     return (
@@ -15,7 +17,7 @@ export default class PubTab extends React.Component {
         <List disablePadding={true} style={{marginLeft: '3%', marginTop: '2%'}}>
           <ListItem alignItems="flex-start">
             <ListItemAvatar>
-              <Avatar style={{width: 50, height: 50, borderRadius: '0px'}} alt="GT" src="https://sc18.supercomputing.org/app/uploads/2018/01/sc18_ogimage.png" />
+              <Avatar style={{width: 50, height: 50, borderRadius: '0px'}} alt="GT" src={sc18} />
             </ListItemAvatar>
             <ListItemText
               primary="2018 IEEE/ACM 4th International Workshop on Extreme Scale Programming Models and Middleware"

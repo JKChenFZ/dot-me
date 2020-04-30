@@ -13,13 +13,13 @@ export default class ContactTab extends React.Component {
     return (
       <div className="col panel-layout">
         <List style={{marginLeft: '5%', marginRight: '5%', marginTop: '3%'}}>
-          <ListItem button onClick={()=> window.open("https://github.com/KunFZ", "_blank")}>
+          <ListItem button onClick={()=> window.open("https://github.com/JKChenFZ", "_blank")}>
             <ListItemIcon>
               <DesktopMacIcon />
             </ListItemIcon>
             <ListItemText primary="Github" />
           </ListItem>
-          <ListItem button onClick={()=> window.open("https://www.linkedin.com/in/kunchengt", "_blank")}>
+          <ListItem button onClick={()=> window.open("https://www.linkedin.com/in/jasonchengt", "_blank")}>
             <ListItemIcon>
               <BusinessIcon />
             </ListItemIcon>
